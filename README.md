@@ -12,7 +12,7 @@ Getting Started
 ---------------
 This project uses the Gradle build system.  Clone the project from GitHub and open it using Android Studio. 
 This project was developed using Android Studio Artic Fox so make sure your IDE is updated. 
-After cloning, make sure your device has internet connectivity and run the project.
+
 
 Screenshots
 -----------
@@ -20,6 +20,7 @@ Screenshots
 ![App Screenshots](screenshots/screenshot_one.gif "ScreenShot")
 ![App Screenshots](screenshots/screenshot_two.gif "ScreenShot")
 ![App Screenshots](screenshots/screenshot_three.gif "ScreenShot")
+![App Screenshots](screenshots/screenshot_four.gif "ScreenShot")
 
 
 Libraries Used
