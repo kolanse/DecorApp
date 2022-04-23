@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_product_detail_scene"
+    android:background="@color/pink_50"
+    tools:context=".ui.ProductDetailFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/back_button_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/pink_10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="25dp"
+        android:elevation="30dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/back_arrow_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@id/back_button_card"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_pager"
+        android:fillViewport="true"
+        android:layout_marginHorizontal="@dimen/margin_50"
+        android:background="@color/pink_50"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp"
+      />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/product_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voom \nCandles"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablayout"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:textSize="18sp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/product_details_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$50"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tablayout"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:textSize="18sp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/product_details_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/product_details_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@id/product_details_title"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:textSize="14sp"/>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/select_color_one"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintTop_toBottomOf="@id/product_details_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/select_color_one"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:contentPadding="20dp"
+        android:padding="5dp"
+        app:strokeColor="@color/select_color_one_stroke"
+         app:strokeWidth="10dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/select_color_two"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintTop_toBottomOf="@id/product_details_tv"
+        app:layout_constraintStart_toEndOf="@id/select_color_one"
+        android:background="@color/select_color_two"
+        app:layout_constraintTop_toTopOf="@id/select_color_one"
+        app:layout_constraintBottom_toBottomOf="@id/select_color_one"
+        android:layout_marginStart="10dp"
+        app:strokeColor="@color/select_color_two_stroke"
+        app:contentPadding="20dp"
+        android:padding="5dp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/select_color_three"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:layout_constraintTop_toBottomOf="@id/product_details_tv"
+        app:layout_constraintStart_toEndOf="@id/select_color_two"
+        android:background="@color/select_color_three"
+        app:layout_constraintTop_toTopOf="@id/select_color_one"
+        app:layout_constraintBottom_toBottomOf="@id/select_color_one"
+        android:layout_marginStart="10dp"
+        app:strokeColor="@color/select_color_three_stroke"
+        app:contentPadding="20dp"
+        android:padding="5dp"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/counter_bg"
+        app:layout_constraintTop_toTopOf="@id/select_color_three"
+        app:layout_constraintBottom_toBottomOf="@id/select_color_three"
+        app:layout_constraintEnd_toStartOf="@id/add_btn"
+        android:layout_marginEnd="-30dp"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/pink_20">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <TextView
+           android:id="@+id/minus_btn"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-"
+           android:layout_marginStart="10dp"
+           android:fontFamily="@font/montserrat_alternates_semibold_italic"
+           android:textSize="23sp"/>
+
+
+       <TextView
+           android:id="@+id/quantity_tv"
+           app:layout_constraintStart_toEndOf="@id/minus_btn"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1"
+           android:layout_marginStart="15dp"
+           android:fontFamily="@font/montserrat_alternates_semibold"
+           android:textSize="20sp"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/add_btn"
+        app:layout_constraintTop_toTopOf="@id/counter_bg"
+        app:layout_constraintBottom_toBottomOf="@id/counter_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="15dp"
+        android:layout_marginEnd="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:layout_gravity="center"/>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_to_cart_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/brown_300"
+        app:cornerRadius="20dp"
+        android:textColor="@color/black"
+        android:text="ADD TO CART"/>
+
+
+    <ImageView
+        android:id="@+id/like_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="@id/add_to_cart_btn"
+        app:layout_constraintBottom_toBottomOf="@id/add_to_cart_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/heart_selector"
+        android:padding="10dp"
+        />
+
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

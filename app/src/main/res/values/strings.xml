@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DecorApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="neo">Neo</string>
+    <string name="decor">Decor</string>
+    <string name="min_details_decor">Be Faithful to your own taste, because \nnothing you really like is ever out of style</string>
+    <string name="product_details_text">Orb is a set of seven metal candle holders stacked on top of one another to form a modern spherical sculpture. Designed to be functional</string>
+</resources>

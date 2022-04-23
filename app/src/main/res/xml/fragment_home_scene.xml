@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+
+
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toStartOf="parent"
+            />
+        <Constraint
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="@id/funnel_view"
+            motion:layout_constraintBottom_toBottomOf="@id/funnel_view"
+            motion:layout_constraintEnd_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Constraint
+            android:id="@+id/funnel_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintTop_toBottomOf="@id/home_title"
+            android:layout_marginTop="@dimen/margin_20"
+            motion:layout_constraintStart_toEndOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/tablayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50"
+            android:layout_marginEnd="@dimen/margin_50"
+            motion:layout_constraintTop_toBottomOf="@id/funnel_view"
+            android:layout_marginTop="@dimen/margin_20"
+            motion:layout_constraintEnd_toStartOf="parent"/>
+
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginStart="@dimen/margin_20"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toTopOf="@id/funnel_view"
+            motion:layout_constraintBottom_toBottomOf="@id/funnel_view"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@id/funnel_view"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Constraint
+            android:id="@+id/funnel_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            motion:layout_constraintTop_toBottomOf="@id/home_title"
+            android:layout_marginTop="@dimen/margin_20"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin_10"
+            />
+
+        <Constraint
+            android:id="@+id/tablayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50"
+            android:layout_marginEnd="@dimen/margin_50"
+            motion:layout_constraintTop_toBottomOf="@id/funnel_view"
+            android:layout_marginTop="@dimen/margin_20"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+    </ConstraintSet>
+
+
+
+</MotionScene>

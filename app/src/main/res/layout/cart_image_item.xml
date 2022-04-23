@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/pageMarginAndoffset"
+    android:layout_marginRight="@dimen/pageMarginAndoffset"
+    app:cardCornerRadius="@dimen/margin_20"
+    android:elevation="@dimen/margin_50">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/decor_one_image"/>
+
+
+
+</com.google.android.material.card.MaterialCardView>

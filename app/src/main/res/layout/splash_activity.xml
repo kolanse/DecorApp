@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/splash_activity_scene"
+    tools:context=".SplashActivity">
+
+
+    <TextView
+        android:id="@+id/neo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neo"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="@dimen/margin_20"
+        android:fontFamily="@font/montserrat_alternates_bold"/>
+    <TextView
+        android:id="@+id/decor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decor"
+        android:textColor="@color/brown"
+        android:textSize="25sp"
+        android:elevation="@dimen/margin_20"
+        android:fontFamily="@font/montserrat_alternates_bold"/>
+
+
+
+
+    <TextView
+        android:id="@+id/decor_main_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's \ndecor \nyour home"
+        android:textSize="40sp"
+        android:elevation="@dimen/margin_20"
+        android:fontFamily="@font/montserrat_alternates_semibold_italic"
+        android:textColor="@color/black"
+        android:lineHeight="50sp"
+        />
+
+
+    <TextView
+        android:id="@+id/decor_min_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_details_decor"
+        android:textSize="@dimen/text_size_14"
+        android:elevation="@dimen/margin_20"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:textColor="@color/black"
+        />
+
+
+    <com.example.decorapp.ui.view.CircleCardView
+        android:id="@+id/circle_card"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/pink_100"
+        app:cardCornerRadius="250dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/next_btn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:src="@drawable/right_arrow"
+        android:elevation="@dimen/margin_20"
+        />
+</androidx.constraintlayout.motion.widget.MotionLayout>

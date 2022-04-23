@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_50"
+    tools:context=".ui.LikedProductsFragment"
+    android:paddingBottom="@dimen/margin_50">
+
+
+    <TextView
+        android:id="@+id/liked_products_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liked Products"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:elevation="@dimen/margin_20"
+        android:fontFamily="@font/montserrat_alternates_semibold_italic"
+        android:textColor="@color/black"
+        android:lineHeight="50sp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/liked_products_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbars="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/liked_products_title"
+        android:layout_marginTop="@dimen/grid_2"
+        android:layout_marginBottom="@dimen/grid_1"
+        tools:listitem="@layout/liked_products_item"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
