@@ -2,6 +2,8 @@
 
 This app uses motion layout to achieve animations 
 
+Design inspiration [Behance Project](https://www.behance.net/gallery/130511339/User-Interface-Design)
+
 ## Author
 
 - [Ochuba Samuel](https://www.github.com/kolanse)
@@ -22,8 +24,7 @@ Screenshots
 
 Libraries Used
 --------------
-* [Architecture][10] - Jetpack architechure libraries. A collection of libraries 
- for managing app component lifecycles.
+* [Architecture][10] - Jetpack architechure libraries. A collection of libraries  for managing app component lifecycles.
 * [Android KTX][2] - Concise Kotlin code with less verbosity
 * [Lifecycles][12] - Monitor lifecycle events and update UI accordingly
 * [MotionLayout][93] - Motionlayout for animations
@@ -31,8 +32,10 @@ Libraries Used
 
 
 [0]: https://developer.android.com/jetpack/components
+[2]: https://developer.android.com/kotlin/ktx
 [4]: https://developer.android.com/training/testing/
 [10]: https://developer.android.com/jetpack/arch/
+[12]: https://developer.android.com/topic/libraries/architecture/lifecycle
 [92]: https://developer.android.com/reference/android/animation/ObjectAnimator
 [93]: https://developer.android.com/training/constraint-layout/motionlayout
 
