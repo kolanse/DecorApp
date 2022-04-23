@@ -74,7 +74,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
-        android:layout_marginHorizontal="@dimen/margin_50"
         android:background="@color/pink_50"
         app:tabTextColor="@color/black_100"
         app:tabSelectedTextColor="@color/brown_500"
